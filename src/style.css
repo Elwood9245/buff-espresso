@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* 全局触摸优化 */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 滑条样式 */
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 8px;
+  border-radius: 4px;
+  background: #e5e7eb;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #1a1a2e;
+  cursor: pointer;
+}
+
+/* 数字输入框去掉 spinner */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
