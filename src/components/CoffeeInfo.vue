@@ -28,7 +28,7 @@ const model = defineModel<CoffeeInfo>({ required: true })
       />
     </div>
 
-    <div>
+    <div class="overflow-hidden">
       <label class="block text-sm text-stone-500 mb-1">烘焙日期</label>
       <input
         v-model="model.roastDate"
@@ -37,7 +37,7 @@ const model = defineModel<CoffeeInfo>({ required: true })
       />
     </div>
 
-    <div>
+    <div class="overflow-hidden">
       <label class="block text-sm text-stone-500 mb-1">开袋日期</label>
       <input
         v-model="model.openDate"
@@ -46,7 +46,7 @@ const model = defineModel<CoffeeInfo>({ required: true })
       />
     </div>
 
-    <div>
+    <div class="overflow-hidden">
       <label class="block text-sm text-stone-500 mb-1">测试日期</label>
       <input
         v-model="model.testDate"
