@@ -28,31 +28,37 @@ const model = defineModel<CoffeeInfo>({ required: true })
       />
     </div>
 
-    <div class="overflow-hidden">
+    <div>
       <label class="block text-sm text-stone-500 mb-1">烘焙日期</label>
-      <input
-        v-model="model.roastDate"
-        type="date"
-        class="w-full min-w-0 max-w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
-      />
+      <div class="flex min-w-0">
+        <input
+          v-model="model.roastDate"
+          type="date"
+          class="flex-1 min-w-0 px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
+        />
+      </div>
     </div>
 
-    <div class="overflow-hidden">
+    <div>
       <label class="block text-sm text-stone-500 mb-1">开袋日期</label>
-      <input
-        v-model="model.openDate"
-        type="date"
-        class="w-full min-w-0 max-w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
-      />
+      <div class="flex min-w-0">
+        <input
+          v-model="model.openDate"
+          type="date"
+          class="flex-1 min-w-0 px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
+        />
+      </div>
     </div>
 
-    <div class="overflow-hidden">
+    <div>
       <label class="block text-sm text-stone-500 mb-1">测试日期</label>
-      <input
-        v-model="model.testDate"
-        type="date"
-        class="w-full min-w-0 max-w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
-      />
+      <div class="flex min-w-0">
+        <input
+          v-model="model.testDate"
+          type="date"
+          class="flex-1 min-w-0 px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
+        />
+      </div>
     </div>
   </div>
 </template>
