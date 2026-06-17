@@ -33,7 +33,7 @@ const model = defineModel<CoffeeInfo>({ required: true })
       <input
         v-model="model.roastDate"
         type="date"
-        class="w-full min-w-0 px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
+        class="w-full min-w-0 max-w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
       />
     </div>
 
@@ -42,7 +42,7 @@ const model = defineModel<CoffeeInfo>({ required: true })
       <input
         v-model="model.openDate"
         type="date"
-        class="w-full min-w-0 px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
+        class="w-full min-w-0 max-w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
       />
     </div>
 
@@ -51,7 +51,7 @@ const model = defineModel<CoffeeInfo>({ required: true })
       <input
         v-model="model.testDate"
         type="date"
-        class="w-full min-w-0 px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
+        class="w-full min-w-0 max-w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500"
       />
     </div>
   </div>

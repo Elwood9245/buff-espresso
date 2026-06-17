@@ -28,3 +28,9 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* 日期输入在移动端防止溢出 */
+input[type="date"] {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}

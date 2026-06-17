@@ -94,7 +94,7 @@ function prev() {
     </header>
 
     <main class="max-w-lg mx-auto px-4 py-4">
-      <div class="bg-white rounded-2xl shadow-sm p-5 space-y-6">
+      <div class="bg-white rounded-2xl shadow-sm p-5 space-y-6 overflow-hidden">
         <section v-show="currentStep === 1" class="space-y-6">
           <CoffeeInfo v-model="record.coffeeInfo" />
           <hr class="border-stone-200" />
