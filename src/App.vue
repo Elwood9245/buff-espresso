@@ -35,14 +35,19 @@ function handleExport() {
 
 function reset() {
   Object.assign(record, defaultRecord())
-  currentStep.value = 1
+  goToStep(1)
+}
+
+function goToStep(step: number) {
+  currentStep.value = step
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
 function next() {
-  if (currentStep.value < 6) currentStep.value++
+  if (currentStep.value < 6) goToStep(currentStep.value + 1)
 }
 function prev() {
-  if (currentStep.value > 1) currentStep.value--
+  if (currentStep.value > 1) goToStep(currentStep.value - 1)
 }
 </script>
 
@@ -63,7 +68,7 @@ function prev() {
         <div class="flex items-center gap-0.5">
           <template v-for="(step, idx) in steps" :key="step.id">
             <button
-              @click="currentStep = step.id"
+              @click="goToStep(step.id)"
               :class="[
                 'flex-shrink-0 w-8 h-8 rounded-full text-xs font-bold transition-all flex items-center justify-center',
                 currentStep === step.id
